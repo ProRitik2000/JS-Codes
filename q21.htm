@@ -1,0 +1,30 @@
+<!-- 21. JavaScript Program to Check if the Numbers Have Same Last Digit -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q21</title>
+</head>
+<body>
+    <script>
+        var a=prompt("Enter the value of a:");
+        var b=prompt("Enter the value of b:");
+        function question21(a,b){
+            var c=a[a.length-1];
+            var d=b[b.length-1];
+            console.log('last digit of a:' ,c);
+            console.log("last digit of b:" ,d)
+
+            if(c===d){
+                console.log("Have the same last digit");
+            } 
+            else {
+                console.log("haven't the same last digit");
+            }
+        }
+        question21(a,b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+    "redhat.telemetry.enabled": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "files.autoSave": "onFocusChange",
+    "git-autoconfig.configList": [
+        {
+            "user.name": ""
+        }
+    ],
+    "git-autoconfig.ignoreRootList": [
+        "D:/New folder/Javascript NFold"
+    ]
+}

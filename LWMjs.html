@@ -1,0 +1,462 @@
+<!-- word vs keyword
+var let const
+Hoisting:- variable and functions are hoisted which means there declaration is moved on the top 
+of the code
+//**********************************************************************************************
+Types in js:-
+variables and constant
+code me koi bhi store karne ke liye jiska use hota hai use kehnte hain variables -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn what matters</title>
+</head>
+<body>
+        <button>click here to check the value of this here in event listener</button>
+    <script>
+        // console.log(a);//jabtak ham koi value ni denge tbtk uski value undefined hi hoti hai
+        // var a;//declaration
+        // a=13;//initialization
+        // var a=12;
+        // undefined:- existence hai but we don't know exact value 
+        //not defined:- doesn't exist
+        // var b=15;//goes to top at the hoisting process
+        // console.log(b);//not defined
+        // var b=15;//undefined
+//**********************************************************************************************************************************
+    //    primitives  =number,string,null,undefined,boolean
+    //    reference=[] () {} jinme brackets ho wo hote hain referances
+    //   Aisi koi bhi value jisko copy karne par real copy nahi hota balki us main value ka 
+    //   referance pass ho jata hai use hum refreancce value kehte hain or jiska copy karne 
+    //  par real copy ho jaye use hum primitive type value hoti hai
+
+        // var a=12;
+        // var b=a;
+
+        // b=b+2;
+        // var a=[12,13,14,15];
+        // var b=a;
+
+        // b.pop();
+        //jahan bhi brackets honge to wahan referance hoga otherwise without bracket primitive hi rehega
+//**************************************************************************************************************
+        //Conditionals:- if else ,else-if
+
+        // if(0){
+        //     console.log("Hello bhai")
+        // }
+        // else{
+        //     console.log("How r u?")
+        // }
+
+        //  if(11>12){
+        //     console.log("Dev")
+        //  }
+        //  else if(12>13){
+        //     console.log("Ritik")
+        //  }
+        //  else if(14>16){
+        //     console.log("Dost")
+        //  }
+        //  else{
+        //     console.log("Fine")
+        //  }
+//*********************************************************************************************************************************************
+        //loops ka matlab hota hai REPEAT
+        //1 1 1 1 1 1 1 1 1 1 1
+        // 0 1 2 3 4 5 6 7 8 9 
+        //for while
+        //0-10
+       
+        // for(var i=25;i<51;i++){
+        //     var i=[];
+        //     console.log(i);
+        // }
+        //     var a=12;
+        // while (a<20) {//while loop k andar kuchh esa likho jo aage jakar toote and condition ko false bnaye
+        //     a++;
+        // }
+//*********************************************************************************************************************************************************
+        //Functions(very important)>>> functions ka matlab aap kuchh code ko likh kqr koi naam de skte
+        // hain and baad me usey use kar skte ho with that name as many times.
+        //function==code ko naam dena
+
+        //     functions mainly 3 kaam k liye hote hian:-
+        // 1) jab apka code aap turant nahi chalana chahte ,future me chalana chahte hian
+        // 2) jab apka code aap reuse karna chahte ho 
+        // 3) jab aap code chalana chahte ho har baar with different data
+        //  function abcd(){
+        //     console.log("Hello")//function statement 
+        //  }
+        //  abcd();//jab hum bolenege tabi chelga hamraa function and isse me mere code ko kitni b baar baad me print kara by just calling fucntion
+
+        // function abcd(a,b,c){//Parameters>>>variables jinme value store hoti hai hmare arguments wali
+        //     console.log(a,b,c);
+        // }
+        // abcd(12,13,14);//Arguments>>real values jo hum run karte time dete hain
+//******************************************************************************************************************************************************************************
+
+        //Arrays->>hum ek varaible me ek value store kar paate hain par jab humen ek se zyada
+        //value store karni ho tab fir use hota hai array ka,means that array freedom deta hai 
+        //hamen ek se zayada value use karne ki
+        //Array = group of values
+
+        // var a=[12,13,11,10,8,5,4];
+        //Arrays index always starts from zero index
+//******************************************************************************************************************************************************************************
+        //push pop shift unshift
+
+        // var arr=[1,2,3,4,5,6,7,8];
+        // arr.push(19);// to add one value
+        // arr.pop(19);//remove one value
+        // arr.unshift(33);//start index par value ko add karna ho to
+        // arr.shift();//it will remove one value from starting index
+        // arr.splice(3,2)//agar array k beech me se koi value ko hatana ho tab
+        //>>>yahan par 3 ek index hai & 2 ye bata raa h ki kitni values ko hatana hai us index se
+//*********************************************************************************************************************************************************************************
+
+        //Objects-->Ek se jaada bande ki baat ki to hua ARRAY,if ek bande ke baare mein saari 
+        //baat ki to hua OBJECT.
+        //Object hai ek bande ki details ko hold karna, in a key value pair
+    // 1) blank obj
+
+//*********************************************************************************************************************************************************************************************
+        // The difference b/w var let const
+        
+        // ES5 -->var and ES6 -->let and const
+        //var old js me tha 
+        //var function scoped hota hai.--->var apne parent function me kahin b use ho skta hai
+        //var add itself to the window object
+
+        // function abcd(){
+        //       for(const i=1;i<12;i++){
+        //         console.log(i);//yahan par for ke end hone par b hmara var 1 baar to chlega and log krke dega
+        //       }
+        //       console.log(i);//var is function scope 
+        // }
+        // abcd();
+        //let const new js ES6 me hai
+        //let and const braces scope hota hai
+        //let doesn't adds to the window object
+//***********************************************************************************************************************************************************
+        //Window object
+        //Browser context api me hi window object ,stack and heap memory hoti hai
+                // Window object me browsers k features hote hain
+        //js language me kuchh cheejen nahi hai jo hum use kar sakte hainaur wo cheezen hame js se nahi balki
+        //browser se milti hain,aise sare features jo js ka part nahi but fir b hum use kar skte hain unhe 
+        //hum dhoond sakte hain ek particular object me jika naam hai window object 
+        //  var a;//it will add a in window 
+        //  var b=8;
+        //  const c=12;
+        //  var d=12;//it will add this in window
+        // alert,prompt,console aren't the parts of js(Its the parts of window object which is browser)
+        //je me kai sare features hain par kuchh features jo hum use karte hain wo features js language me use kar lete
+        //hain window se,aur window hai ek box of faetures given by a browser to use with js
+//*********************************************************************************************************************************************************************************
+        //jitne bhi variables ham banate hain unhe store kahi to karna padta hai uske liye hota hai
+        //heap memory 
+//**********************************************************************************************************************************************************
+        //Execution context:-->>> matlab jab bhi hum function chalayenge ,fnc apna khudka ek imaginary conatainer bna 
+        //lega jismein uski 3 cheezen hogi:
+        //1) variables
+        //2) fncs inside that parent fnc
+        //3) lexical environemnt of that fnc
+        // ye jo container hai imaginary ise hi hum execution context kehte hain
+
+        //Execution context is a container where the function's code is executed and its 
+        // created whenever a fnc is called,it contains 3 things-variables,functions and lexical environment.
+
+        //lexical environemnt hota hai ek chart hota hai jisme ye likha hota hai ki apka particular fnc kin 
+        //cheezon ko access kar skta hai & kinko nahi,means it holds its scope and scope chain
+        // function abcd(){
+        //         var a=12;
+        //         function def(){
+        //                 var b=19;//koi bhi function ane andar k function k variables ko use ni kar skta  like abcd fnc can't use def() variable b
+        //                 //var ka scope hmesha apne nearest function tak hota hai
+        //                 //Lexical environement hame ye batata hai ki apka fnc kya access kar skta hai or kya nahi kr skta
+        //         }
+        // }
+//******************************************************************************************************************************************************************************************
+        //how to copy referance values 
+        // var a=[1,2,3,4,5];
+        // var b=[...a];//yahan ... hota hai spread operator means yahan par spread operator k baad jo bhi likha hai uske values ko copy kr lega
+        // b.pop();
+        
+        // var obj={name:'Ritik'};//objects ko likhne k liye curly braces ka use karenge
+        // var cpy={...obj};
+//**************************************************************************************************************************************************************************************************
+        // js me kuchh bhi likho wo mainly 2 prakar me se kisi ek prakar se karti hai
+        //falsy values ye hai==> 0 false undefined null NaN document.all
+        //truthy values remaining falsy
+        // if('Ritik'){//jo bhi values falsy values se belong karengi wo sabhi falsy hogi & remaining truthy hogi
+        //         console.log('hey')
+        // }
+        // else{
+        //         console.log('hello')//jab bhi if me hamri condition falsy se related hogi tab hmesa hmara 'else' statement hi chlega
+        // }
+//****************************************************************************************************************************************************************************************************
+        // switch (4) {
+        //         case 1:
+        //                 console.log('Hey');
+        //                 break;
+        //         case 2: console.log('Hello')
+        //                 break;
+        //         case 3:
+        //                 console.log('Ram');
+        //                 break;
+        //         case 4:console.log('Ram Ram');
+        //                 break;
+        //         default:
+        //                 break;
+        // }
+//************************************************************************************************************************************************************************************************************
+        //for-each forin and do-while
+        //for each loop sirf array par chlta hai means jab bhi tumare pass ek array ho,tab use mein kaun aata hai ***foreach*** loop
+        
+        //for each:----->> kabhi bhi by default apke array me change nahi karta wo apko chnages karke deta hai 
+        //array ki temporary copy par jiske wajh se array hmesha same rehta hai 
+
+        // var a=[1,2,23,34,34,4,23,4,3,45,54,3,23];
+        // a.forEach(function(value){//foreach k andar hmesha function aata hai n arrow function also can come
+        //         console.log(value+1);//yahan val ek variable hai hamre paas
+        // })
+        // var a=[1,2,3,4,5];//isme copy jati hai uthkar jaise 1 ki copy jyegi 1 really nahi jeyaga
+        // a.forEach(function(val){
+        // val+2;
+        // })
+        //-----------------------------------------------------------------------------------------------//
+        //for in loop:----->> objects par loop karne k liye hota hai
+        // var obj={
+        //         name:'Ritik',//yahan is object obj me name,age & city keys hain
+        //         age:23,
+        //         city:'Indore'
+        // }
+        // for(var key in obj){
+        //         console.log(key,obj[key]);//isme obj object hame in keys k value return krke de raa h
+        // }
+        //------------------------------------------------------------------------------------------------------//
+        // var a=100;
+        // do{
+        //         console.log('ye 1 baar to hmesha hi chlegaa')
+        //         a++;
+        // }
+        // while(a < 15)
+//*****************************************************************************************************************************************************************
+        //Callback functions
+
+        //jab bhi koi aisa code jo baad me chlta hai aap likhoge,kyunki wo code baad me chlta hai js ko 
+        //ye pata nahi hota ki wo complete hua h yaa nahi,aise completion par js ko btaya jaata hai ke wo 
+        //complete hogaya aur use chala skte ho,ye batane ka kaam callback ka hai.
+        // setTimeout(function(){//Settimeout is a asynchronous js
+        // console.log('2 second baad chala');
+        // },2000)
+
+        //Esa code jo baad me chlta hai use hum ek function dedete hain ke bhai jab complete hojana
+        //to ye func chala dena,aur wo fnc jo hum dete hain wo ek normal fnc hi hota hai aur use kehte
+        //hain callback fnc
+//****************************************************************************************************************************************************************************
+        //first class fnc s
+        //js me ek concept hai jiska mtlb hota hai ki aap fnc ko use kr skte ho as a value
+        // var a=function(){};//we can treat fncs as a normal value
+        // function abcd(a){
+        //         a();
+        // }
+        // abcd(function(){
+        //         console.log("hey");
+        // })
+//**********************************************************************************************************************************************************************************
+        //How arrays are made behind the scenes
+        // var arr=[1,2,3,4,5];
+       
+        // arr={
+        //         0:1,
+        //         1:2,
+        //         2:3,
+        //         3:4,
+        //         [-1]:5,
+
+        // }
+        // console.log(arr);
+//*****************************************************************************************************************************************************
+        //The Endgame
+//*****************************************************************************************************************************************************
+        // function abcd(){
+        //         return function(){}
+        // }
+        // abcd(function(){})
+        //Higher order fnc jo accept krle ek aur fnc yaa fir wo return karde ek aur fnctn
+        // var a=[1,2,3,4,5];
+        // a.forEach(function(){})
+//***********************************************************************************************************
+                //jab aapke paas esa koi bhi mauka ho ki apko ek jaisi properties waale bahut sare
+                //elements banane hain us waqt aap constructor fnc use kar sakte ho
+                // function saanchaofBiscuit(){
+                //         this.width=12;
+                //         this.height=22;
+                //         this.color='brown';
+                //         this.taste='sugary';
+                // }
+                // var bis1=new saanchaofBiscuit()
+                // var bis2=new saanchaofBiscuit()
+                // var bis3=new saanchaofBiscuit()
+        //-----------------------------------------------------------------------
+                // function circularButtonBanao(color){
+                //         this.radius=2;
+                //         this.color=color;
+                //         this.icon=false;
+                //         this.pressable=true;
+                // }
+                // var redbtn=new circularButtonBanao('red')
+                // var greenbtn=new circularButtonBanao('green')
+          
+        //normal fnc jisme this ka use ho and aap fnc ko call krte time new keyword ka use karein
+//****************************************************************************************************************************************************
+        //First class fncs---->Ese functions jinhe hum normal values yaa variables ki tarah hi treat kar saken,unhe js me kehte hain first class functions
+//         function abcd(){
+
+//         }
+//         abcd(function(){});
+//        setTimeout(() => {
+        
+//        }, timeout);
+//************************************************************************************************************************************************************************************
+        //New keyword---->jab bhi new lgta h hmesha ek blank object apne maan me bnaa lo
+        // function abcd(){
+        //         this.age=12;
+        // }
+        // var a=new abcd()
+        // {
+        //         age=12;
+        // }
+//*********************************************************************************************************************************************************************************
+        //IIFE--->Immediately Invoked Function Expression
+                //fnction ko turant chalane ki kala,is tarike se ki hum log koi private variable bana paayen
+                //
+
+//         var ans=(function(){
+//                 var privateVal=12;
+//                 return {     
+//                 getter:function(){
+//                         console.log(privateVal);
+//                 },
+//                 setter:function(val){
+//                         privateVal=val;
+//               }
+//         }
+// }());
+//------------------------------------------------------------------------------------------------
+        // function one(){
+        //         console.log("one");
+        //         two();
+        // }
+        // function two(){
+        //         console.log("two");
+        //         three();
+        // }
+        // function three(){
+        //         console.log("three");
+        // }
+        // one();
+        // two();
+        // three();
+//************************************************************************************************************************************************************************************************
+        //Prototype
+        //Prototype contains many helper properties and methods which we can use to complete our task
+                //has properties like hasOwnproperty() and many more
+        // var obj={name:"Ritik"};
+//**************************************************************************************************************************************************************************************************************
+        //Prototypal inheritance 
+
+        // var human={
+        //         name:"Ritik",
+        //         canFly:false,
+        //         canTalk:true,
+        //         willDie:true
+        // }
+
+        // var sheryiansStudent={
+        //         solveJsQuestion:true,
+        //         createModernWebsite:true
+        // }
+        // sheryiansStudent.__proto__=human;
+//************************************************************************************************************************************************************************************************************************
+        //----------This,call, apply ,bind--------------
+        //jab bhi tum kuchh llikh rhe ho ,check kro kyaa usmein kahin bhi koi fnction ,object yaa
+        //fir scope bana hai.
+
+        //jab bhi koi cheez {} brackets ke andar nahi hoti hai tab ham use global scope kehte hain
+
+        // var a=12;//here a is in global scope 
+        // function abcd(){
+        //         var b=11;//here b is in local scope of abcd function
+        // }
+        // console.log(this);-----this is a special keyword jiski value har jagah par different ho sakti hai-----
+                //yahan global scope me this ki value hoti hai-window object
+        //---------------------------------------------------------------------//
+        // function abcd(){
+        //         console.log(this)
+        // }
+        // abcd();//yahan function scope me this ki value bhi hoti hai-window object
+        //----------------------------------------------------------------------//
+        
+        //Ek function jo object k andar ho use method kehte hain
+        // var obj={
+        //         name:"Ritik",
+        //         baatkaro:function(){
+        //                 console.log(this);
+        //         }
+        // }
+        // obj.baatkaro();
+        //global => window
+        //function => window
+        //method => object
+        // var button=document.querySelector("button");
+        // button.addEventListener("click",function(){
+        //         // console.log(this);
+        //         this.style.color='red'
+        // })
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //call apply bind=> agar tumhare pass koi fnc hai and koi object hain & tumhe fnc chalana 
+        //hai or by default jo this ki value hai use window na rakhkar point karwani hai kisi object ki taraf
+
+        // function abcd(){
+        //         console.log(this.age);
+        // }
+        // var obj={age:23}
+        // abcd.call(obj);//isme apna this jo h wo ek obj ko point kr raa hai
+
+        //  function abcd(val1,val2,val3){
+        //         console.log(this,val1,val2,val3);
+        // }
+        // var obj={age:23}
+        // abcd.call(obj,1,2,3);
+        // abcd.apply(obj,[1,2,3])//2 se zyada parameters honge to hum use ek array me daal denge
+//-------------------------------------------------------------------------------------------------
+        //------------------Bind-----------------------
+
+        // function abcd(){
+        //         console.log(this);
+        // }
+        // var obj={age:24}
+        // var bindedfnc=abcd.bind(obj);
+        // bindedfnc();
+//*************************************************************************************************************************************************************************************
+        //pure and impure fncs
+        // function abcd(val){
+        //         return Math.random()*val;
+        // }//impure function
+        // var ans1=abcd(2);
+        // var ans2=abcd(2);
+//----------------------------------------------------------------------------------------------------
+        //  function abcd(a,b){
+        //          return a*b;
+        //  }//pure functions
+        //  var ans1=abcd(1,2);
+        //  var ans2=abcd(1,2);
+//*********************************************************************************************************************************************************************************************************************************
+        
+    </script>
+</body>
+</html>
