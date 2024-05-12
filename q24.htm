@@ -1,0 +1,28 @@
+<!-- 24. JavaScript Program to Find the Factors of a Number -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q24</title>
+</head>
+<body>
+    <script>
+        var a=prompt('Enter the value of number a:');
+        function question24(a){
+            var Factors=[];
+            // for(let i=1;i<=a/2;i++){
+                for(let i=1;i<=a;i++){
+                if(a%i==0){
+                Factors.push(i);
+                }
+            }
+            // Factors.push(parseInt(a));
+            console.log("Factors of given number: ",Factors);
+        }
+        question24(a);
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!-- //What is DOM?
+
+//4 pillars of DOM?
+Ans:- 1. Selection of an element :-koi element jo html me likha h use js me select karna hai
+      2. Changing HTML
+      3. Changing CSS
+      4. Event Listener
+
+//Simple example of bulb or whatever clicking on the same button
+//Multiple events
+
+
+//Selecting multiple elements at a same time 
+//setTimeout
+//setInterval
+//future projects -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 70px;
+            color: red;
+        } 
+
+        #bulb{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 4px solid black;
+             background-color: yellow; 
+             color: black;
+        
+        }
+         button{
+            padding: 10px 30px;
+            font-size: 20px;
+            margin:80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>DOM padhle bhai</h1> -->
+    <!-- <div id="bulb">
+    
+    </div>
+    <button>ON</button> -->
+    <!-- <h1>Hello ji</h1>
+    <h1>Hello bhai</h1>
+    <h1>Hyy bro</h1> -->
+    <script>
+   // 1)1st pillar of DOM
+    // var a=document.querySelector("h1")//document mtlb html ka doc. se query ko select kar,baar baar naa likhna pade isliye ise ek variable a me dala hai 
+    // console.log(a);
+//***************************************************************************************************************************************************************************************************************
+    //2)Changing html (2nd pillar of DOM)
+    // var a=document.querySelector('h1').innerHTML="FAN"//ise ese b likh sakte hain
+    // a.innerHTML="changed"//ye hamre html doc. k andar change karane me help karega
+//*************************************************************************************************************************************************************************************************************
+    //3) changing css(3rd pillar of DOM)
+    // var a=document.querySelector('h1')
+    // a.style.color="black";
+    // a.style.backgroundColor="lightblue";
+    // a.style.fontFamily="Cursive";//yahan ham only jis b element ki properties change karna hai uske sath hum dot style ,dot property karke uski value ko easily change kar sakte hain.
+//***************************************************************************************************************************************************************************************************
+    //4)Event Listener(4th pillar of DOM)
+    //Event:-something which is happening
+    //Listener:-observer,understander
+
+    // var a=document.querySelector('h1')
+    // a.innerHTML="How r u guys?"
+    // a.style.color='yellow'
+    // a.style.backgroundColor='lightgreen'
+
+    // var a=document.querySelector('h1')
+    // a.addEventListener('click',function(){//click is an event that we applies on a function & code inside our function will be execute on clicking on html element
+        // console.log('Hey');
+    //     a.innerHTML="Hn bhai me badal gya hun"
+    //     a.style.color='blue'
+    //     a.style.backgroundColor='Seablue'
+    // })
+//********************************************************************************************************************************************************************************    
+
+    // var a=document.querySelector('#bulb')//id h bulb isliye hamne yahan hash # lagaya hai ,element me kuchh ni lagatae only element ka name likh dete
+    // var btn=document.querySelector('button')
+    // var count=0;
+    // btn.addEventListener('click',function(){
+        // a.style.backgroundColor='yellow';
+        // if(count==0){
+            // a.style.backgroundColor='yellow';
+            // count++;//bulb off hai
+        // }
+        // else{
+            // a.style.backgroundColor='transparent';
+    //         count--;//bulb on hai
+    //     }
+    // })
+    // btn.addEventListener('click',function(){
+    //     a.style.backgroundColor='none';
+    // })
+//*******************************************************************************************************************************************************************
+
+//Selecting multiple elements at a same time
+        // var h=document.querySelectorAll("h1")//jahan b query selector hoga wahan if id or class hai to hame id ke phle # and class ke pehle .dot lagana is very necessary
+        // for(let i=0;i<h.length;i++){
+        //     h[i].style.color="Red"
+        // h[i].style.fontWeight='700'
+        // h[i].style.fontSize='70px'
+        // }
+//textcontent:- if we've to change only the text we uses textcontent and if want to change our complete html then we uses innerHTML
+//***************************************************************************************************************************************************************************************************************************************************
+
+
+    </script>
+    
+</body>
+</html>
+
+

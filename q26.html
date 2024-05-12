@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=parseInt(prompt("Enter the input number a:"));
+        var result=[];
+        // var b=parseInt(prompt("Enter the input number b:"));
+        function question26(a){
+            if(a==0){
+                console.log(result);
+                return;
+            }
+            result.push(a);
+            question26(a-1);
+        }
+        question26(a);
+       
+    </script>
+</body>
+</html>
+
