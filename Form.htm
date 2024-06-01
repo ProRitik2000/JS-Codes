@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            min-height: 90vh;
+            background: url("https://nutritionconnect.org/sites/default/files/2020-03/sdgtrendsm.png");
+            background-repeat:no-repeat;
+            width: 100%;
+            min-height: fit-content;
+            background-size: cover;
+        }
+        #formbox{
+            width: 30%;
+            height: 679px;
+            border: 2px solid black;
+            /* min-height: 100vh; */
+            background-color: rgb(242, 245, 241);
+            padding-top: 30px;
+           
+        }
+        #heading{
+            font-size:40px;
+        }
+        #username{
+            padding-left:2px;
+            height: 25px;
+            font-size:15px;
+        }
+        #password{
+            padding-left:2px;
+            height: 25px;
+            font-size:15px;
+        }
+        #email{
+            padding-left:2px;
+            height: 25px;
+            font-size:15px;
+        }
+        #contact{
+            padding-left:2px;
+            height: 25px;
+            font-size:15px;
+        }
+        input{
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div id="formbox">
+        <h1 id="heading">Registration Form</h1> <br> <br>
+        Username :
+            <input type="text" id="username"  placeholder="Enter username" onclick="button()"> <br> <br>
+        <label>Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </label>
+            <input type="password" name="password" id="password"  placeholder="Enter password"> <br> <br>
+        <label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="email" name="email" id="email"  placeholder="Enter your email"> <br> <br>
+        <label>Contact no.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+           <input type="number" name="number" id="contact"  placeholder="Enter your contact"><br> <br>
+           <label>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select >
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>  <br> <br>
+           </label>
+            Upload file <input type="file" name="file" id="file"> <br> <br>
+            <input type="submit" value="SUBMIT" id="btn1" onclick="button()">
+        </label>
+    </div>
+   <script src="Form.js"></script>
+</body>
+</html>

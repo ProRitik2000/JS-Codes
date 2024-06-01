@@ -1,12 +1,12 @@
-<!-- //Locally manage our work related to code etc. -->
+<!-- //Locally manage our work related to code etc.
 
-git config --global user.name "name"
+🟥🟨🟩🟦git config --global user.name "name"
 git config --global user.email "email@female.com"
 
 git config --global core.editor "code --wait" 
 
 git config --global core.autocrlf 
-
+🟥🟨🟩🟦
 
 git installation
 
@@ -30,13 +30,13 @@ going back to some previous saved point
     reverting back to the previous saved point 
 
 
-WHAT MATTERS
+WHAT MATTERS✅
 -----------------------------------------------------------
 VIDEO 1 -OVERVIEW
 PROBLEM AND WHY COMPANIES USE GIT AND GITHUB
 
 
-VIDEO 2-THE ULTIMATE BASICS
+VIDEO 2-THE ULTIMATE BASICS✅
 -----------------------------------------------------------
 git ko enable karna -git init
 untracked files
@@ -44,19 +44,27 @@ git k saath files add karna -staging
 saved point yaa checkpoint create karna -git commit
 kisi pichhle checkpoint par wapas jaana -git reset
 
-VIDEO 3 -STATUS AND LOGS -MAKING POSSIBILITIES -BRANCHING
+VIDEO 3 -STATUS AND LOGS -MAKING POSSIBILITIES -BRANCHING✅
 -----------------------------------------------------------
 status dekhna 
 logs check karna with graph option 
 branch samajhna
 branch merge karna 
+Merging techniques -If merge ,three way merge ,squash merging,recursive strategy merge ,rebase and merge
 
 jab bhi aap ek folder banate hain to git ko kuchh nahi pata apke folder ke baare mein,
 isliye aap wahan par git ko initialize karte ho ,ab git ko permissions mili hai to
 git aapke folder ko pehchanta hai,to kyunki git kaam kar sakta hai is folder par ab hum yahan par
 untracked ,tracked ,modified,staged,and saved checkpoints create kar sakte hain,git kuchh interesting cheezen kar sakta hai jaise ki aap chaahen to kisi bhi moment par ye check kar sakte ho aapki kitni files kis stage par hain 
 
--> initialize karo
--> check kr skte ho aap konsi file kis stage mein hai -> git status -s
--> check kr skte ho aap kitne saved checkpoints hain -> git log --oneline --graph
--> git status sirf unka status btayega jo files committed nahi nahi hain yaa fir commit hone ke baad change ki gayi hai
+->🔰 initialize karo
+->🔰check kr skte ho aap konsi file kis stage mein hai -> git status -s
+it status batata hai file ke changes ke baare mein & uske state ke baare mein aur ye sab hota hai before commit or after commit 
+
+ git status sirf unka status btayega jo files committed nahi nahi hain yaa fir commit hone ke baad change ki gayi hai
+
+git status batata hai commit ke pehle and baad ki file stage 
+->🔰check kr skte ho aap kitne saved checkpoints hain -> git log --oneline --graph
+git log batata hai saare commit histories 
+
+ 

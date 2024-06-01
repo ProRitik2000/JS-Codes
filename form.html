@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css">
+    
+</head>
+<body>
+    <div id="mainbox">
+        <div id="innerbox">
+            <h1 id="heading">Registration Form</h1> <br> 
+            Username: <br>
+             <input type="text" placeholder="Enter username" id="username" > <br> <br>
+             <span id="usererror" class="text-danger-red font-weight-bold"></span> 
+            Email: <br>
+            <input type="text" placeholder="Enter your email" id="email"> <br> <br>
+            <span id="emailerror" class="text-danger-red font-weight-bold"></span>
+            Contact: <br>
+            <input placeholder="Enter your contact no." id="contact"> <br> <br>
+            <span id="contacterror" class="text-danger-red font-weight-bold"></span>
+            Password: <br>
+            <input placeholder="Enter your password" id="password" type="password"> <br> <br>
+            <span id="passworderror" class="text-danger-red font-weight-bold"></span>
+            Confirm Password: <br>
+            <input placeholder="Confirm your password" id="cnfmpsswd" type="password"> <br> <br>
+            Gender: <br>
+            <select name="Gender" id="gender">
+                <option value="Select gender">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select> <br><br>
+           <div class="btns">
+            <button id="Sbtn" type="submit" onclick="submit()">Submit</button>  <br> <br>
+            <button id="Rbtn" onclick="Clear()">Reset</button>
+           </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>6
+</html>
