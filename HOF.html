@@ -1,0 +1,36 @@
+<!-- higher order function -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Function</title>
+</head>
+<body>
+    <script>
+        debugger
+       function a(x){
+        // console.log(x);
+        console.dir(x);  
+        x();  
+       }
+    //     a({ name:'Ritik Pal',location:'Indore',Age:23})
+    //    a({ name:'Dinesh Pal',location:'Indore',Age:25 })
+    //    a({name:'Love Yadav',location:'Indore',Age:15})
+    //    a(['Devanshu','Umesh','Yatharth','Vishal','Hemant','Pune',45])
+       
+    //   function sayHii(){
+    //     console.log("Hii");
+    //   }
+    //   const b=sayHii;
+    //   b();
+    //   sayHii();
+      a( function sayHii(){//callback function
+        console.log("Hii");
+      });
+      //a is a higher order function
+      //function inside this a is a callback function
+      
+    </script>
+</body>
+</html>
