@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+        }
+
+        .maindiv {
+            width: 450px;
+            height: 680px;
+            /* border: 2px solid black; */
+            background: linear-gradient(to bottom right, rgb(30, 30, 230), rgb(215, 80, 102), rgb(246, 163, 7));
+            border-radius: 15px;
+
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #logo {
+            font-size: 60px;
+            font-weight: 900;
+            color: #FFFFFF;
+            height: 70px;
+            padding-top: 50px;
+            /* margin-top: 30px; */
+            font-family: "Dancing Script", cursive;
+        }
+
+        #input1 {
+            height: 40px;
+            width: 350px;
+            /* border-radius:7px; */
+            font-size: 15px;
+            padding-left: 10px;
+            border: none;
+            outline: 0;
+        }
+
+        #input2 {
+            height: 40px;
+            width: 80%;
+            /* border-radius:7px; */
+            font-size: 15px;
+            padding-left: 10px;
+            border: none;
+            outline: none;
+            /* position: absolute; */
+        }
+
+        #subdiv1 {
+            background-color: white;
+            margin: 0px 30px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #subdiv2 {
+            background-color: white;
+            margin: 0px 30px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #subdiv3 {
+            background-color: #0897f6;
+            margin: 0px 30px;
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            width: 390px;
+            display: flex;
+            color: white;
+            font-weight: 300;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #subdiv3:hover {
+            background-color: #3241e6;
+        }
+
+        #hrline {
+            color: white;
+        }
+
+        #subdiv4 {
+            font-size: 20px;
+            font-weight: 500;
+            width: 100%;
+
+        }
+
+        #subdiv4 a {
+            text-decoration: none;
+            color: #385185;
+            font-size: 22px;
+
+        }
+
+        #subdiv4 i {
+            color: rgb(43, 43, 255);
+            font-size: 22px;
+
+        }
+
+        #bottomdiv {
+            color: #00376B;
+            font-size: 16px;
+        }
+
+        #bottomdiv a {
+            color: #00376B;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <h3 id="logo">Instagram</h3>
+        <div id="subdiv1">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="username" placeholder="Phone number,username ,or email" required id="input1">
+        </div><br>
+        <div id="subdiv2">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" name="password" placeholder="Password" id="input2">
+            <i class="fa-solid fa-eye-slash" onclick="data2()" id="eyeslash"></i>
+        </div><br>
+        <div id="subdiv3" onclick="data()">Log in
+        </div> <br> <br>
+        <div id="hrline">------------------------------ &nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp;
+            ------------------------------</div> <br><br>
+        <div id="subdiv4">
+            <i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;<a href="https://www.facebook.com/">Log in with
+                Facebook</a>
+        </div> <br>
+        <div id="bottomdiv"><a href="./Validationpath.htm">Forgot password?</a>
+
+        </div>
+    </div> <br>
+
+    <script>
+
+        function data() {
+            let username = document.getElementById("input1").value;
+            let password = document.getElementById("input2").value;
+
+            if (username === "" || password === "") {
+                alert('All fields are compulsory');
+            }
+            else if (username === 'palritik315@gmail.com' || username === 'Ritikg' || username === '8269601466') {
+                if (password === 'Ritik98765#') {
+                    alert('login successfully done!...')
+                }
+                else {
+                    alert("Incorrect password!");
+                }
+            }
+            else {
+                alert('Incorrect username or password!')
+            }
+        }
+        function data2() {
+            var input2 = document.getElementById("input2")
+            var eye_slash = document.getElementById("eyeslash");
+            if (input2.type === "password") {
+                input2.type = "text";
+                eye_slash.classList.remove("fa-eye-slash")
+                eye_slash.classList.add("fa-eye")
+            }
+            else {
+                input2.type = "password";
+                eye_slash.classList.remove("fa-eye");
+                eye_slash.classList.add("fa-eye-slash");
+
+            }
+        }    
+    </script>
+</body>
+
+</html>
